@@ -1,0 +1,15 @@
+{
+  "name": "web-sockets-and-nodejs-chat-system",
+  "version": "1.0.0",
+  "description": "chat room system using nodejs and websockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gerald Maduabuchi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "ws": "^8.5.0"
+  }
+}
