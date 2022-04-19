@@ -1,0 +1,136 @@
+:root {
+  --box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: rgb(55, 55, 55);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(49, 49, 49);
+  box-shadow: var(--box-shadow-1);
+  padding: 1.5 rem 7%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+}
+
+.header a {
+  font-weight: bolder;
+  height: 3.5rem;
+  color: white;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+.header .btn {
+  margin-right: 0.3rem;
+  cursor: pointer;
+  padding: 0.8rem;
+  background: rgb(138, 138, 255);
+  color: white;
+  border-radius: 9px;
+  border: none;
+}
+
+section {
+  margin: auto;
+}
+
+section h1 {
+  text-align: center;
+  padding-top: 8rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+section .underline {
+  text-transform: none;
+  position: relative;
+}
+section .underline:after {
+  position: absolute;
+  content: "";
+  background: rgb(138, 138, 255);
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 4rem;
+}
+
+.chat-box {
+  margin-top: 5rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+input[type="text"] {
+  border-radius: 9px;
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+}
+
+.message-box:hover {
+  outline: 1px solid rgb(138, 138, 255);
+}
+
+.send-btn {
+  border-radius: 9px;
+  padding: 1rem;
+  background-color: rgb(138, 138, 255);
+  margin-left: 5px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.msg-box {
+  padding: 5rem;
+  width: 4rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border-radius: 9px;
+  color: white;
+}
+
+@media screen and (max-width: 390px) {
+  .chat-box {
+    background: none;
+    box-shadow: none;
+    border: none;
+  }
+  .header a {
+    font-size:0.8rem;
+  }
+  .header button {
+      font-size: 0.6rem;
+  }  
+}
+
+@media screen and (max-width: 415px) {
+    .chat-box {
+      background: none;
+      box-shadow: none;
+      border: none;
+    }
+    .header a {
+        font-size:0.8rem;
+      }
+      .header button {
+          font-size: 0.6rem;
+      }  
+}

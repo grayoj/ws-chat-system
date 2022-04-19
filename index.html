@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <title>NodeJS Chat System</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="description" content="web-sockets-chat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <a href="/index" class="logo">NodeJS Chat App</a>
+      <div class="buttons">
+       <a href="https://github.com/grayoj?tab=repositories"><button class="btn">Back to Github</button></a>
+        <button class="btn">Check Git Chat</button>
+      </div>
+    </nav>
+    <section class="content">
+      <h1>Start Chatting</h1>
+      <div class="underline"></div>
+    </section>
+    <div class="chat-box">
+      <input
+        type="text"
+        id="messageBox"
+        class="message-box"
+        placeholder="Send A Message"
+      />
+      <button class="send-btn" id="send">Send</button>
+    </div>
+    <div>
+      <div class="msg-box">
+        <pre id="messages"></pre>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/chat.js"></script>
+</html>
