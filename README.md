@@ -2,6 +2,7 @@
 ***
 
 This is a simple chat system in node.js that uses websockets. This isnpired my current side project Gitchat. 
+Enables multichat.
 
 ## Requirements
 
